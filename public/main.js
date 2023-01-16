@@ -1,4 +1,4 @@
-import './stylesheets/index.scss'
+import './css/index.css'
 
 
 
