@@ -122,3 +122,26 @@ margin-top: 100px;
  
 
 } */
+.header-provedor-details{
+  display: grid;
+  grid-template-columns: 2.5fr 4fr;
+  column-gap: 10px;
+}
+
+.products-provedor-details{
+  display: grid;
+  grid-template-columns: 2.5fr 4fr;
+  column-gap: 10px;
+}
+.img-product{
+  background-image: url(../img/product.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+}
+
+#product-card{
+  display: grid;
+  grid-template-rows: 1.25fr 0.75fr 0.40fr;
+}
