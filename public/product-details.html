@@ -9,95 +9,112 @@
   <link rel="stylesheet" href="css/output.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <title>INICIO</title>
+  <meta name="viewport" content="height=device-height"/>
 </head>
 
-<body class="h-auto w-auto ">
+<body>
+  
+  <div class="container">
 
-  <div id="contenedor-navegacion" class="h-20 shadow-md  w-full">
-    <img class="h-9" src="img/khaz-logo.svg" alt="">
-    <nav class=" flex  justify-center gap-32">
-      <a  href="index.html">Inicio</a>
-      <a href="nosotros.html">Nosotros</a>
-      <a href="provedores.html">Proveedores</a>
-      <a class="selected" href="#">Productos</a>
-      <a href="contacto.html">Contacto</a>
-    </nav>
-  </div>
-  <div id="section-image" class=" w-full h-full grid grid-cols-2  px-32 pt-10">
-   <div class="container-product-gallery w-full h-[650px]" >
-    <!-- IMAGE -->
-    <div  class="img-product w-full h-5/6"></div>
-    <!-- GALLERY -->
-    <div class=" flex items-center justify-center">
-        <div class=" flex flex-row  justify-center  gap-10">
-          <div class=" bg-white">
-             <img  class="min-img" src="img/product.png" alt="">
-          </div>
-          <div class=" bg-white">
-             <img  class="min-img" src="img/product.png" alt="">
-          </div>
-          <div class=" bg-white">
-             <img  class="min-img" src="img/product.png" alt="">
-          </div>
-          <div class=" bg-white">
-             <img  class="min-img" src="img/product.png" alt="">
-          </div>
-          <div class=" bg-white">
-             <img  class="min-img" src="img/product.png" alt="">
-          </div>
-        </div> <!-- <img src="img/product.png" alt=""> -->
+    <div id="contenedor-navegacion" class="h-20 shadow-md min-w-full  ">
+      <img class="h-9 w-auto" src="img/khaz-logo.svg" alt="">
+      <nav class=" flex  justify-center gap-32 w-full">
+        <a href="index.html">Inicio</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="provedores.html">Proveedores</a>
+        <a class="selected" href="productos.html">Productos</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
     </div>
-   </div>
 
+    <!-- CONTAINER PRODUCT -->
+    <div id="container-product">
+        
+      <!-- IMAGE -->
 
-   <div id="section-details">
-
-      <div>
-        <h2>Nombre de producto</h2>
-        <h3>Marca del producto</h3>
-      </div>
-
-      <div>
-        <h2>$ 20.00</h2>
-      </div>
-
-      <div>
-        <input type="text">
-        <button></button>
-      </div>
-
-      <div>
-        <h1>Detalles de producto</h1>
-        <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste accusantium voluptatum tempore rerum eaque illo eligendi, libero possimus ut modi nisi tempora facere est dolore iure laborum, minus quo odit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa hic eaque earum quibusdam molestiae saepe incidunt, voluptatibus alias veniam officia similique, impedit, possimus aut ab quia placeat nulla. Perspiciatis, explicabo!</p>
-      </div>
-
-      <div>
-
-        <div>
-          Componentes
+      <div id="section-product" class=" w-full grid grid-cols-2  pt-10">
+        <div class="container-product-gallery w-full h-[80vh]">
+          
+          <div class="img-product w-full h-5/6"></div>
+          <!-- GALLERY -->
+          <div class=" flex items-center justify-center">
+            <div class=" flex flex-row  justify-center  gap-10">
+              <div class=" bg-white">
+                <img class="min-img" src="img/product.png" alt="">
+              </div>
+              <div class=" bg-white">
+                <img class="min-img" src="img/product.png" alt="">
+              </div>
+              <div class=" bg-white">
+                <img class="min-img" src="img/product.png" alt="">
+              </div>
+              <div class=" bg-white">
+                <img class="min-img" src="img/product.png" alt="">
+              </div>
+              <div class=" bg-white">
+                <img class="min-img" src="img/product.png" alt="">
+              </div>
+            </div> 
+          </div>
         </div>
-
-        <div>
-
-          <div>
-            <h3>Componente 1</h3>
-            <p>Valor1</p>
+        <!--  -->
+  
+        <div id="section-details" class="px-10 h-[80vh] overflow-y-auto overflow-x-hidden ">
+  
+          <div class="mb-5">
+            <h2 class="text-4xl font-medium">Nombre de producto</h2>
+            <h3 class="text-2xl text-slate-400">Marca del producto</h3>
           </div>
-          <div>
-            <h3>Componente 2</h3>
-            <p>Valor2</p>
+  
+          <div class="text-3xl font-semibold text-lime-600 mb-5">
+            <h2>$ 20.00</h2>
           </div>
-          <div>
-            <h3>Componente 3</h3>
-            <p>Valor3</p>
+  
+          <div class="mb-5">
+            <input class=" border rounded border-slate-300 w-14 h-12 mr-3" type="text" />
+            <button class="bg-[#FF8A35] w-52 h-12 text-xl text-white rounded"> AÑADIR A LA CESTA</button>
           </div>
-
+  
+          <div class="mb-5">
+            <h1 class="text-3xl font-medium mb-4">Detalles de producto</h1>
+            <p class="text-justify"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste accusantium voluptatum
+              tempore rerum eaque illo eligendi, libero possimus ut modi nisi tempora facere est dolore iure laborum,
+              minus quo odit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa hic eaque earum quibusdam
+              molestiae saepe incidunt, voluptatibus alias veniam officia similique, impedit, possimus aut ab quia placeat
+              nulla. Perspiciatis, explicabo!</p>
+          </div>
+  
+          <div>
+  
+            <div class="w-full bg-[#789640] p-1 text-2xl text-slate-100 pl-8">
+              Componentes
+            </div>
+  
+            <div>
+  
+              <div class=" flex justify-between px-8 p-3 border-b-2  border-b-gray-300">
+                <h3>Componente 1</h3>
+                <p>Valor1</p>
+              </div>
+              <div class=" flex justify-between px-8 p-3 border-b-2  border-b-gray-300">
+                <h3>Componente 2</h3>
+                <p>Valor2</p>
+              </div>
+              <div class=" flex justify-between px-8 p-3 border-b-2  border-b-gray-300">
+                <h3>Componente 3</h3>
+                <p>Valor3</p>
+              </div>
+  
+            </div>
+  
+          </div>
         </div>
-
       </div>
-   </div>
+
+
+    </div>
+
   </div>
-
 </body>
 
 </html>
