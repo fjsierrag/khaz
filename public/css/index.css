@@ -146,3 +146,14 @@ margin-top: 100px;
   grid-template-rows: 1.25fr 0.75fr 0.40fr;
   overflow: hidden;
 }
+
+.container-product-gallery {
+  display: grid;
+  grid-template-rows:4fr 1fr ;
+  padding: 0 30px;
+}
+
+.min-img{
+  height: 6rem;
+  width: auto;
+}
