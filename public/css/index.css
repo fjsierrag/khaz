@@ -24,7 +24,7 @@ body{
   align-items: center;
   justify-items: center;
   background: white;
-  position: fixed;
+  position: sticky;
   top: 0;
 
 
@@ -41,7 +41,7 @@ body{
   font-size: x-large;
 }
 
- a:hover{
+#contenedor-navegacion nav  a:hover{
   color:var(--style-color-2);
 }
 
@@ -173,6 +173,8 @@ margin-top: 100px;
 
 .container{
   max-width: inherit;
+
+ 
  
 }
 #container-product{
@@ -187,4 +189,8 @@ margin-top: 100px;
 }
 #section-product{
   margin: auto 0;
+}
+
+#contact-container{
+  padding-top: 5%;
 }
