@@ -238,3 +238,39 @@ body{
   background-color:var(--style-color-2);
   color: white;
   }
+
+  #tab-objetivo{
+    width: 100%;
+    height: 100vh !important ;
+   display: block;
+   
+  
+  }
+  .clip {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, #1d976c, #93f9b9);
+    mask-image:url(../img/shape.svg) ;
+  }
+
+  #ecuador{
+    height: 70%;
+    width: auto;
+
+  }
+  #ecuador path:hover{
+    fill: var(--style-color-2);
+    
+  }
+  .obj-container{
+    width: 100%;
+    height: max-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #tab-proveedores{
+    width: 100%;
+    height: 100vh;
+    padding-top: 100px;
+  }
