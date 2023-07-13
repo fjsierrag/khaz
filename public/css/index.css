@@ -157,7 +157,7 @@ body{
   column-gap: 10px;
 }
 .img-product{
-  background-image: url(../img/product.png);
+  /* background-image: url(../img/product.png); */
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
